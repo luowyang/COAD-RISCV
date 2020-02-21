@@ -1,0 +1,27 @@
+1.
+slli x7, x5, 4
+x7 = x5 << 4 = 0x0000000AAAAAAAA0
+or   x7, x7, x6
+x7 = x7 | x6
+Aligning x7 and x6 will give us a clear perspective:
+x7 0x0000000AAAAAAAA0
+x6 0x1234567812345678
+OR with 0 will preserve the operand
+A|1=B, A|2=A, A|3=B, A|4=E, A|5=F, A|6=E, A|7=F, A|8=A
+Thus x7 will be 0x1234567ABABEFEF8
+
+2.
+slli x7, x6, 4
+x7 = x6 << 4 = 0x2345678123456780
+
+3.
+srli x7, x5, 3
+x7 = x5 >> 3 = 0x0000000015555555
+andi x7, x7, 0xFEF
+x7 = x7 & 0xFEF
+Aligning x7 and 0xFEF will give us a clear perspective:
+x7  0x0000000015555555
+imm 0x0000000000000FEF
+AND with 0 will mask the operand
+5&F=5, 5&E=4
+Thus x7 will be 0x0000000000000545

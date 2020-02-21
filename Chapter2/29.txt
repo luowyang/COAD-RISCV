@@ -1,0 +1,19 @@
+fib:
+        beq  x10, x0, exit  # return 0, note that x10 == 0
+        addi x5, x0, 1
+        beq  x10, x5, exit  # return 1, note that x10 == 1
+        addi sp, sp, -16    # move sp down 16 bytes
+        sd   x1, 8(sp)      # push x1 on stack
+        sd   x8, 0(sp)      # push x8 on stack
+        add  x8, x0, x10    # move n to x8
+        addi x10, x8, -1    # x10 = n - 1
+        jal  x1, fib        # x10 = fib(n-1)
+        add  x5, x10, x0    # move fib(n-1) to x5
+        addi x10, x8, -2    # x10 = n - 2
+        add  x8, x5, x0     # move fib(n-1) to x8
+        jal  x1, fib        # x10 = fib(n-2)
+        add  x10, x10, x8   # x10 = fib(n-1) + fib(n-2)
+        ld   x8, 0(sp)      # pop x8 from stack
+        ld   x1, 8(sp)      # pop x1 from stack
+        addi sp, sp, 16     # move sp up 16 bytes
+exit:   jalr x0, 0(x1)      # return x10

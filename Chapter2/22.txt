@@ -1,0 +1,6 @@
+1.
+jal has a 20 bits immediate field, so the jump range is in [-2^18, 2^18-1] instructions.
+PC's possible value is in [0x1FFF0000, 0x2000FFFF]
+
+2.beq has a 12 bits immediate field, so the branch range is in [-2^10, 2^10-1] instructions.
+PC's possible value is in [0x1FFFF000, 0x20000FFF]

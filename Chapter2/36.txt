@@ -1,0 +1,8 @@
+We will first load the highest 32 bits as described in the book, then shift it right, lastly load the lowest 32 bits
+
+lui  x10, 0x11223
+addi x10, x10, 0x344     # highest bit is 0, no need to worry about sign expansion
+slli x10, x10, 32
+lui  x5, 0x55667
+addi x5, x5, 0x788      # highest bit is 0, no need to worry about sign expansion
+add  x10, x10, x5

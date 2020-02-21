@@ -1,0 +1,11 @@
+f:
+    add  x12, x12, x13  # x12 = c + d
+    addi sp, sp, -16
+    sd   x1, 0(sp)
+    sd   x12, 8(sp)
+    jal  x1, g          # x10 = g(a, b)
+    ld   x11, 8(sp)     # x11 = c + d
+    jal  x1, g          # x10 = g(g(a, b), c+d)
+    ld   x1, 0(sp)
+    addi sp, sp, 16
+    jalr x0, 0(x1)      # return

@@ -1,0 +1,5 @@
+sub  x30, x28, x29  # x30 = i - j
+slli x30, x30, 3    # x30 = (i - j) * 8
+add  x30, x30, x10  # x30 = &A[i - j]
+ld   x30, 0(x30)    # x30 = A[i - j]
+sd   x30, 64(x11)   # B[8] = A[i - j]

@@ -1,0 +1,18 @@
+If we have 128 registers, we will need 7 bits per register field.
+If four times as many instructions are included, we will need 2 more bits for opcode and funct. 
+
+1.
+rd, rs1 and rs2 all need 7 bits, totaling 21bits.
+Thus only 11 bits left for opcode and funct, however, they need 12.
+
+2.
+rd and rs1 both need 7 bits, 14 in total.
+opcode and funct3 need 12 bits, leaving only 6 bits for immediate field.
+
+3.
+With more registers on hand, we could more easily allocate register without touching the memory,
+we could also perform more complicated operations with the expanded instruction set,
+thus less instructions are needed, which decreases the size of the assembly program.
+However, with a small immediate field, we would be forced to perform more immediate shiftings and addings to get long immediates and addresses,
+otherwise we will have to increase the length of instructions.
+Either way, the program size might possibly increase.

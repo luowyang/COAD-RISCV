@@ -1,0 +1,2 @@
+The provided assembly code is the optimized version.
+Since f() will directly return after the second g() call, there is no need to save anything before it.

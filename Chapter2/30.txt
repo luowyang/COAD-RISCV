@@ -1,0 +1,2 @@
+Everytime fib() will push x1 and x8 on stack.
+Before return, fib() will pop them from stack.

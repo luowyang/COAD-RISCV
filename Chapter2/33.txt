@@ -1,0 +1,5 @@
+x10 must be g(g(a, b), c+d)
+x11-x14 can be anything
+x8 must contain exactly what it contains before f is called
+x1 must be f's return address
+sp must be where it is when f is called

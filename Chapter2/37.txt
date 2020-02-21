@@ -1,0 +1,6 @@
+setmax:
+again:  lr.d x5, (x10)      # load-reserved
+        bge  x5, x11 exit   # if x <= *shvar exit
+        sc.d x5, (x10), x11 # save-conditional
+        bne  x5, x0, again  # if fails, try again
+exit:   jalr x0, 0(x1)

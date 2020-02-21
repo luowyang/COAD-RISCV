@@ -1,0 +1,7 @@
+        addi x29, x0, 800   # x29 = 100 * 8
+        add  x29, x29, x10  # x29 = &MemArray[100]
+        addi x5, x0, 0
+LOOP:   ld   x7, 0(x10)
+        add  x5, x5, x7
+        addi x10, x10, 8
+        blt  x10, x29, LOOP

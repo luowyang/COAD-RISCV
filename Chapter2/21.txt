@@ -1,0 +1,2 @@
+x5>x0, so the procedure will branch to ELSE, executing ori x6, x0, 2.
+x6 = 0x0 | 0x2 = 0x2

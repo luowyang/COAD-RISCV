@@ -1,0 +1,4 @@
+Both processor will get the shvar. If both of them decide that shvar should be updated, then they will try to overwrite shvar.
+However, only one of them (suppose A) will succeed and return, while the other (suppose B) will fail and read shvar again.
+If B decides that shvar still need to be updated, then it will try and succeed. Otherwise it will return, meaning that shvar is already the max.
+Either case, shvar will be the maximum of its prevoius value and the values possessed by A and B.

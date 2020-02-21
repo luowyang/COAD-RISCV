@@ -1,0 +1,19 @@
+1.
+The loop will be executed 10 times, each time x6 will be decremented by 1 and x5 will be incremented by 2, so x5 will be 20
+
+2.
+while (i != 0) {
+    i -= 1;
+    acc += 2;
+}
+
+3.
+loop will be executed N times, each time 4 instructions will be executed.
+beq will be executed an extra time to find x6==x0.
+So totaling 4N+1 times
+
+4.
+while (i >= 0) {
+    i -= 1;
+    acc += 2;
+}

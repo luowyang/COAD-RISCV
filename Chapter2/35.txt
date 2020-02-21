@@ -1,0 +1,7 @@
+The assembly code get data from addr.x7 and put it to addr.(x7+8)
+
+1.
+On a big-endian machine, the highest byte comes first, it will be 0x11
+
+2.
+On a little-endian machine, the lowest byte comes first, it will be 0x88

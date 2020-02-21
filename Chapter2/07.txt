@@ -1,0 +1,8 @@
+slli x30, x28, 3    # x30 = i * 8
+add  x30, x30, x10  # x30 = &A[i]
+ld   x30, 0(x30)    # x30 = A[i]
+slli x31, x29, 3    # x31 = j * 8
+add  x31, x31, x10  # x31 = &A[j]
+ld   x31, 0(x31)    # x31 = A[j]
+add  x30, x30, x31  # x30 = A[i] + A[j]
+sd   x30, 64(x29)   # B[8] = A[i] + A[j]

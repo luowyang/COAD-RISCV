@@ -1,0 +1,5 @@
+12 instructions
+In every outer loop, the inner loop will be executed once, totaling 7+1=8 instructions.
+In every outer loop, 4+8=12 instructions will be executed.
+The outer loop will be executed 10 times, totaling 10*12+1=121 instructions.
+So in total, 121+1=122 instructions will be executed.

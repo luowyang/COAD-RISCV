@@ -1,0 +1,8 @@
+1.
+rpt sholud have the same format as jal, so it will be UJ-type
+
+2.
+bge  x0, x29, exit
+addi x29, x29, -1
+jal  x0, loop
+exit:

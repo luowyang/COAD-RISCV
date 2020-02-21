@@ -1,0 +1,16 @@
+1.
+Previous cycles: 1*500 + 10*300 + 3*100 = 3800M
+Previous time: 3800*1 = 3800M
+Present cycles: 1*375 + 10*300 + 3*100 = 3625M
+Present time: 3625M*1.1 = 3987.5M
+Present time > Previous time, thus its a bad design choice
+Arithmetic instructions acount for only a little amount of running time, so the trade-off is undesirable.
+
+2.
+2X:
+Present cycles: 0.5*500 + 10*300 + 3*100 = 3550M
+Improvement ratio: <7%
+10X:
+Present cycles: 10.1*500 + 10*300 + 3*100 = 3350M
+Improvement ratio: <12%
+Only get a slght improvement.
