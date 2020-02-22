@@ -1,0 +1,4 @@
+0x5ED4 = ‭0101111011010100‬
+First, 16 = 2^4, meaning that binary can be easily converted to hexdecimal by grouping of 4 and vice versa.
+Second, hexdecimal is only a fourth the length of binary, so it's easier to demonstrate on a screen.
+Last, hexdecimal has 16 symbols compare to binary's 2, so it will be more informative, just think of how disgusting it is to face a long string of 0s and 1s!

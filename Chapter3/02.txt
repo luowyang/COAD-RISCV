@@ -1,0 +1,3 @@
+Actually this could be done just like exercise 1 since both are positive.
+0x5ED4-0x07A4 = 0x5ED4+0xF85C‬ = 0x5730
+The same as exercise 1
