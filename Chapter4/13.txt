@@ -1,0 +1,19 @@
+1.
+ALUSrc1 mux to control access to ALU source 1
+MemWriteSrc mux to control access to data memory write port
+MemAddrSrc mux to control access to data memory write address
+
+2.
+A new bypass from rs1 to MemAddrSrc mux
+A new line from Imm Gen to ALUSrc1 mux
+A new line from ALU to MemWriteSrc mux
+
+3.
+Form rs1 to MemAddr
+From Imm Gen to ALU
+From ALU to MemWrite
+
+4.
+ALUSrc1 forALUSrc1 mux
+MemWriteSrc for MemWriteSrc mux
+MemAddrSrc for MemAddrSrc mux

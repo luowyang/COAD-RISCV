@@ -1,0 +1,2 @@
+The fourth instruction will get the updated value from the first instruction, other instructions will not.
+After execution, x15=54

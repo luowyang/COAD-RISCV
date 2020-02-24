@@ -1,0 +1,16 @@
+1.
+pipelined: 350ps
+non-pipelined: 1250ps
+
+2.
+pipelined: 1750ps
+non-pipelined: 1250ps
+
+3.
+split ID, new clock cycle time is 300ps
+
+4.
+35%
+
+5.
+65%

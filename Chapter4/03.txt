@@ -1,0 +1,11 @@
+1.
+Load and store will use data memory, totaling 35%.
+
+2.
+All instructions should fetch instruction from instruction memory so it's 100%.
+
+3.
+I-type, load, branch and jump will use the signed extension so it's 76%.
+
+4.
+It's doing signed extension anyway since the hardware is parallel inherently.

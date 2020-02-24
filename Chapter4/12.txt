@@ -1,0 +1,14 @@
+1.
+none
+
+2.
+Register file will need a new write port
+MemtoReg mux will need to be a 3:1 mux
+
+3.
+Register read 1 -> Register write 2
+Register read 2 -> MemtoReg mux
+
+4.
+MemtoReg mux will need an extra control line
+RegWrite2 will be needed to control write port 2

@@ -1,0 +1,3 @@
+data hazard between the 3 instructions will NOT be handled, thus add will have x11=11 and x12=22,
+the second addi will have x11=11.
+Thus x13=33, x14=26

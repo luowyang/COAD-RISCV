@@ -1,0 +1,8 @@
+1.
+no effect, it will still be the time of the longest stage among the original 5 stages
+
+2.
+instruction latency will be reduced by 1/5, but throughput will not be affected
+
+3.
+more instructions will be needed, but the throughput has not improved, thus total time consumed may be longer

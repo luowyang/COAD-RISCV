@@ -1,0 +1,31 @@
+0x00c6ba23 = ‭0000000|01100|01101|011|10100|0100011‬
+sd x12, 20(x13)
+
+1.
+00
+
+2.
+PC+4
+
+3.
+ALUSrc
+input:  Reg[x12], 0x0000000000000014
+output: 0x0000000000000014
+PCSrc
+input:  PC+4, PC+0x0000000000000014
+output: PC+4
+MemtoReg
+input:  Reg[x13+20], Mem[Reg[x13+20]]
+output: Mem[Reg[x13+20]]
+
+4.
+ALU: Reg[x12] & 0x0000000000000014
+AdderBrach: PC & 0x0000000000000014
+AdderPC: PC & 4
+
+5.
+Rs1 <= 13
+Rs2 <= 12
+Rd <= 20
+WriteData <= Mem[Reg[x13+20]]
+RegWrite <= 1

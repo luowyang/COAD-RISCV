@@ -1,0 +1,18 @@
+1.
+sd  IF  ID  EX  MEM WB 
+ld      IF  ID  EX  MEM WB 
+sub         IF  ID  EX  MEM WB 
+beqz            IF  ID  EX  MEM WB 
+add                 IF  ID  EX  MEM WB 
+sub                     IF  ID  EX  MEM WB 
+beqz will be stalled for 2 cycles
+
+2.
+not possible unless memory access is among the last instructions,
+because instruction must be fetched no matter what instruction is placed in the collided position
+
+3.
+possible, just insert nop two instructions after memory access instruction
+
+4.
+36%

@@ -1,0 +1,22 @@
+1.
+previous: time = 1.4n  * 250ps = 350n ps
+present:  time = 1.05n * 300ps = 315n ps
+ratio = 350/315 = 111%
+
+2.
+1.4n * 250 = (1 + x) * n * 300
+1 + x = 1.167
+0.167*n
+
+3.
+(1 + x) * n * 250 = (1 + y) * n * 300
+1 + y = 0.833 * (1 + x)
+0.833 * (1 + x) - 1
+
+4.
+0.833 * 1.075 - 1 < 0
+impossible, because this would require that the pipeline could reduce the number of nops to negative
+
+5.
+0.833 * (1 + x) - 1 > 0
+i.e. x > 0.2

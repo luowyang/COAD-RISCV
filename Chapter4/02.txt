@@ -1,0 +1,1 @@
+sd and beq will not write anything to register file so it doesn't matter which data is sent to register file, it can be either 0 or 1 depending on implementations.

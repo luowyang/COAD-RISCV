@@ -1,0 +1,3 @@
+After the completion of the first instruction, each cycle one instruction will be completed, consuming n-1 cycles.
+The first instruction will consume k cycles.
+Totaling n + k - 1 cycles.

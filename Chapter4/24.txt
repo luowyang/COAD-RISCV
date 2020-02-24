@@ -1,0 +1,1 @@
+Choice 2, because add will be stalled once it enter ID stage

@@ -1,0 +1,14 @@
+1.
+ImmGen needs additional control for unsigned extension
+ALU needs additional control for shifting
+
+2.
+addi shares the same ALU control signal as additional
+ImmGen <= 0 (signed extension)
+ALUSrc <= 1
+ALUOp <= 10
+Branch <= 0
+MemRead <= 0
+MemWrite <= 0
+MemtoReg <= 0
+RegWrite <= 1

@@ -1,0 +1,5 @@
+1.
+load
+
+2.
+I-type, upper immediate, store, jump

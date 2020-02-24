@@ -1,0 +1,1 @@
+LUI and jump which do not read from register file
